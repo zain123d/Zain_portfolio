@@ -42,9 +42,9 @@
 * Used a Diabete.csv dataset to create prediction models using Decision Tree, Logistic Regression, Support Vector Machine and Random Forest.
 * Calculated AUC (Area Under the Curve) score for the models and found Logistic Regression in this case was the better option for our prediction model. 
 * Used the same dataset to create visualization using:
-* 1. K-means to Cluster the points
-* 2. Spectral Clustering 
-* 3. DBSCAN
+ 1. K-means to Cluster the points
+ 2. Spectral Clustering 
+ 3. DBSCAN
 
 * Image Manipulation using Python.
 * Reduced the colors in the image to 64, 16 and 8 colors. 
