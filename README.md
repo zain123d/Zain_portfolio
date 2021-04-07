@@ -1,6 +1,21 @@
 
 # A portfolio consisting of all the work I have done related to the field of Information systems. 
 
+
+# [Research Paper on Ensemble Methods in Machine Learning](https://github.com/zain123d/Zain_portfolio/files/6274761/Ensemble.Methods.By.Zain.Ul.Abiden.pdf)
+
+* Research Paper written as part of a Data Science class for my Master of Science in Information Systems program at University of Texas at Arlington
+* Topic: Ensemble Methods in Machine Learning.
+* Diving deep into understanding the fundemanetals of the methodology.
+* Example on how to use Ensemble Method provided in the paper using Python coding.
+
+## Resources Used:
+* Python version 3.7
+* Jupyter Notebook
+* Sources sited at the end of the PDF
+* Packages used: IPython.display, numpy, pandas, sklearn and graphviz.
+
+
 # Project 1
 
 # [Data Visualization using Python in Jupyter Notebook for ChocolateBomberDFW](https://github.com/zain123d/chocolatebomberdfw_dataVisualization/files/6274520/chocolatebomberdfw.-.most.common.payment.type.pdf) 
@@ -58,19 +73,6 @@
 * Python version 3.7
 * Jupyter Notebook
 * Packages used: pandas, nupmy, sklearn, matplotlib, scipy and PIL 
-
-# [Research Paper on Ensemble Methods in Machine Learning](https://github.com/zain123d/Zain_portfolio/files/6274761/Ensemble.Methods.By.Zain.Ul.Abiden.pdf)
-
-* Research Paper written as part of a Data Science class for my Master of Science in Information Systems program at University of Texas at Arlington
-* Topic: Ensemble Methods in Machine Learning.
-* Diving deep into understanding the fundemanetals of the methodology.
-* Example on how to use Ensemble Method provided in the paper using Python coding.
-
-## Resources Used:
-* Python version 3.7
-* Jupyter Notebook
-* Sources sited at the end of the PDF
-* Packages used: IPython.display, numpy, pandas, sklearn and graphviz.
 
 
 
