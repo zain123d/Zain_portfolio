@@ -76,4 +76,86 @@
 * Packages used: pandas, nupmy, sklearn, matplotlib, scipy and PIL 
 
 
+# Project 4
+
+# Mortgage Calculator using Java Programming
+
+* Mortgage calculator along with a schedule of payments 
+* Written as part of course named Fundamental Java Programming taught by Mosh Hamedani from codewithmosh.com
+* Code mentioned below:
+
+package com.zain;
+import java.text.NumberFormat;
+import java.util.Scanner;
+public class Main {
+
+    final static byte  monthsInYear = 12;
+    final static byte  percent = 100;
+
+    public static void main(String[] args) {
+        //Principal input in range 1K to 1M
+        int principal = (int) readNumber("Principal: ", 1000, 100_000_000);
+        //Down payment input not lower than 1K and not higher than or equal to Principal
+        int downPayment = (int) readNumber("What is your down payment?: ", 1000, 500_000);
+        //Annual interest input not higher than 30%
+        float annualInterest = (float) readNumber("Annual Interest rate: ", 1, 30);
+        //Number of payments and number of years no less than 1 no higher than 30
+        byte years = (byte) readNumber("Period in years: ", 1 , 30);
+        //Mortgage calculation
+        double mortgage = calculateMortgage(principal, downPayment, annualInterest, years);
+        String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
+        System.out.println("MORTGAGE\n--------\nMonthly Payments: " + "\n" + mortgageFormatted);
+        System.out.println();
+
+        printPaymentSchedule(principal, downPayment, annualInterest, years);
+    }
+
+    private static void printPaymentSchedule(int principal, int downPayment, float annualInterest, byte years) {
+        System.out.println("Payment schedule\n------------");
+        for (short month = 1; month <= years * monthsInYear; month++) {
+            double balance = calculateBalance(principal, downPayment, annualInterest, years, month);
+            System.out.println(NumberFormat.getCurrencyInstance().format(balance));
+        }
+    }
+
+    public static double readNumber(String prompt, double min, double max){
+        Scanner scanner = new Scanner(System.in);
+        double value;
+        while (true) {
+            System.out.print(prompt);
+            value = scanner.nextFloat();
+            if (value >= min && value <= max)
+                break;
+            System.out.println("Enter a value between " + min + "and " + max);
+        }
+        return value;
+    }
+    public static double calculateMortgage(
+            int principal,
+            int downPayment,
+            float annualInterest,
+            byte years) {
+
+        short numberOfPayments = (short)(years * monthsInYear);
+        float monthlyInterest = annualInterest / percent / monthsInYear;
+        return (principal - downPayment) * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments)) / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1);
+    }
+    public static double calculateBalance (
+            int principal,
+            int downPayment,
+            float annualInterest,
+            byte years,
+            short numberOfPaymentsMade) {
+        final byte monthsInYear = 12;
+        final byte percent = 100;
+
+        short numberOfPayments = (short)(years * monthsInYear);
+        float monthlyInterest = annualInterest / percent / monthsInYear;
+
+        return (principal-downPayment)
+                * (Math.pow(1+monthlyInterest, numberOfPayments) - Math.pow(1+monthlyInterest, numberOfPaymentsMade)) /
+                (Math.pow(1+monthlyInterest,numberOfPayments)-1);
+    }
+}
+
 
