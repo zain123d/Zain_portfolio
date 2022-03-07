@@ -4,7 +4,7 @@
 # [Assistant Project Manager: Project Whyspots](https://whyspot.vercel.app/)
 
 * Provided assistance in the planning, execution and implementation of the project.
-* Scheduling meeting, keeping track of deliverables along with tracking and reporting project progress.
+* Scheduling meetings, keeping track of deliverables along with tracking and reporting project progress.
 * Performed tasks assigned by the Project Manager in a timely manner.
 * Created graphic SVG assets for the developers to use (logos, icons, backgrounds etc)
 
