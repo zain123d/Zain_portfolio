@@ -1,6 +1,13 @@
 
 # A portfolio consisting of all the work I have done related to the field of Information systems. 
 
+# [Assistant Project Manager: Project Whyspots](https://whyspot.vercel.app/)
+
+* Provided assistance in the planning, execution and implementation of the project.
+* Scheduling meeting, keeping track of deliverables along with tracking and reporting project progress.
+* Performed tasks assigned by the Project Manager in a timely manner.
+* Created graphic SVG assets for the developers to use (logos, icons, backgrounds etc)
+
 
 # [Research Paper on Ensemble Methods in Machine Learning](https://github.com/zain123d/Zain_portfolio/files/6274761/Ensemble.Methods.By.Zain.Ul.Abiden.pdf)
 
